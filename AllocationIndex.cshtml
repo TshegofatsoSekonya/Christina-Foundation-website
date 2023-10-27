@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "AllocationIndex";
+}
+<style>
+    body {
+        background-color: #FF3EF6;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='60%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF3EF6'/%3E%3Cstop offset='1' stop-color='%23992470'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239A45FF' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%239A45FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23D537FF' stroke-width='2' stroke-miterlimit='10' stroke-opacity='.5'%3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill-opacity='.5' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<div class="jumbotron " style="background-color: #992470; color: #ffffff;">
+
+    <div class="row">
+        <h2>Available Money: R @ViewBag.Available</h2>
+        <h2>Available Goods: @ViewBag.goodAvailable</h2>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Allocate Money</h2>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        By allocating funds to this cause, you are enabling us to respond swiftly and effectively to emergencies worldwide.
+                    </p>
+                    <p><a class="btn btn-warning" href="/Home/ListAllocated">View Disaster</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Allocate Goods</h2>
+                </div>
+                <div class="panel-body">
+                    <p>This initiative focuses on the strategic allocation of essential goods to disaster-affected regions. </p>
+                    <p><a class="btn btn-warning" href="/Home/ListAllocatedGoods">View Monetary Donation</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Purchase Goods</h2>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        By choosing to make a monetary donation towards the purchase of essential goods, you are directly contributing to
+                        our efforts in providing immediate relief to disaster-affected communities.
+                    </p>
+                    <p><a class="btn btn-warning" href="/Home/ListPurchasedGoods">View Good Donation</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
